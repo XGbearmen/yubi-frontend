@@ -1,6 +1,5 @@
 // https://umijs.org/config/
 import { defineConfig } from '@umijs/max';
-import { join } from 'path';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
@@ -73,7 +72,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: 'Ant Design Pro',
+  title: '鱼智能 BI',
   layout: {
     locale: true,
     ...defaultSettings,
@@ -130,9 +129,9 @@ export default defineConfig({
     {
       requestLibPath: "import { request } from '@umijs/max'",
       // 或者使用在线的版本
-      schemaPath: "http://localhost:8101/api/v2/api-docs",
+      schemaPath: 'http://localhost:8101/api/v2/api-docs',
       // schemaPath: join(__dirname, 'oneapi.json'),
-      projectName:"yubi",
+      projectName: 'yubi',
       mock: false,
     },
     // {
